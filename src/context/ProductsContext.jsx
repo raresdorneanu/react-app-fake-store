@@ -1,4 +1,4 @@
-import { Children, createContext, useEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { getProductsApi } from "../api/getProductsApi";
 
 const ProductsContext = createContext();
@@ -12,7 +12,9 @@ function ProductsProvider({ children }) {
             try {
                 const products = await getProductsApi();
                 setAllProducts(products);
-            } catch (err) { } finally {
+            } catch (err) {
+                console.log(err.message)
+            } finally {
                 setIsLoading(false)
             }
         }
