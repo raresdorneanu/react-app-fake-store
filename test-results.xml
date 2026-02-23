@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="43" failures="0" errors="0" time="0.833901001">
+    <testsuite name="src/__tests__/Footer.test.jsx" timestamp="2026-02-23T21:16:06.152Z" hostname="Raress-MacBook-Pro.local" tests="9" failures="0" errors="0" skipped="0" time="0.196388959">
+        <testcase classname="src/__tests__/Footer.test.jsx" name="Footer &gt; should render the brand name Clothify" time="0.022474041">
+        </testcase>
+        <testcase classname="src/__tests__/Footer.test.jsx" name="Footer &gt; should render the copyright text" time="0.002374833">
+        </testcase>
+        <testcase classname="src/__tests__/Footer.test.jsx" name="Footer &gt; should render the tagline text" time="0.002046375">
+        </testcase>
+        <testcase classname="src/__tests__/Footer.test.jsx" name="Footer &gt; should render a link to the products page" time="0.091492625">
+        </testcase>
+        <testcase classname="src/__tests__/Footer.test.jsx" name="Footer &gt; should render a link to the about page" time="0.024673625">
+        </testcase>
+        <testcase classname="src/__tests__/Footer.test.jsx" name="Footer &gt; should render the Shop and About section headings" time="0.013987333">
+        </testcase>
+        <testcase classname="src/__tests__/Footer.test.jsx" name="Footer &gt; should render the footer element with the correct CSS class" time="0.001678917">
+        </testcase>
+        <testcase classname="src/__tests__/Footer.test.jsx" name="Footer &gt; the products link should have the correct href" time="0.017769208">
+        </testcase>
+        <testcase classname="src/__tests__/Footer.test.jsx" name="Footer &gt; the about link should have the correct href" time="0.018485791">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/Header.test.jsx" timestamp="2026-02-23T21:16:06.153Z" hostname="Raress-MacBook-Pro.local" tests="8" failures="0" errors="0" skipped="0" time="0.222110708">
+        <testcase classname="src/__tests__/Header.test.jsx" name="Header NOT Logged in &gt; should display logo" time="0.018039">
+        </testcase>
+        <testcase classname="src/__tests__/Header.test.jsx" name="Header NOT Logged in &gt; should display links" time="0.003501708">
+        </testcase>
+        <testcase classname="src/__tests__/Header.test.jsx" name="Header NOT Logged in &gt; should NOT display Auth submenu" time="0.113252542">
+        </testcase>
+        <testcase classname="src/__tests__/Header.test.jsx" name="Header NOT Logged in &gt; should display cart" time="0.029015">
+        </testcase>
+        <testcase classname="src/__tests__/Header.test.jsx" name="Header Logged in &gt; should display logo" time="0.003278084">
+        </testcase>
+        <testcase classname="src/__tests__/Header.test.jsx" name="Header Logged in &gt; should display links" time="0.003449208">
+        </testcase>
+        <testcase classname="src/__tests__/Header.test.jsx" name="Header Logged in &gt; should display Auth submenu" time="0.028870417">
+        </testcase>
+        <testcase classname="src/__tests__/Header.test.jsx" name="Header Logged in &gt; should display cart" time="0.021938084">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/HomeHero.test.jsx" timestamp="2026-02-23T21:16:06.154Z" hostname="Raress-MacBook-Pro.local" tests="16" failures="0" errors="0" skipped="0" time="0.207051542">
+        <testcase classname="src/__tests__/HomeHero.test.jsx" name="Home Hero Not Logged In &gt; should display welcome" time="0.018634625">
+        </testcase>
+        <testcase classname="src/__tests__/HomeHero.test.jsx" name="Home Hero Not Logged In &gt; should display title" time="0.085909125">
+        </testcase>
+        <testcase classname="src/__tests__/HomeHero.test.jsx" name="Home Hero Not Logged In &gt; should display text" time="0.002674416">
+        </testcase>
+        <testcase classname="src/__tests__/HomeHero.test.jsx" name="Home Hero Not Logged In &gt; should display shop button" time="0.018941958">
+        </testcase>
+        <testcase classname="src/__tests__/HomeHero.test.jsx" name="Home Hero Not Logged In &gt; should display meta" time="0.003181291">
+        </testcase>
+        <testcase classname="src/__tests__/HomeHero.test.jsx" name="Home Hero Not Logged In &gt; should display hero card" time="0.002213833">
+        </testcase>
+        <testcase classname="src/__tests__/HomeHero.test.jsx" name="Home Hero Not Logged In &gt; should display floating bar with user count" time="0.001727208">
+        </testcase>
+        <testcase classname="src/__tests__/HomeHero.test.jsx" name="Home Hero Not Logged In &gt; should NOT display authenticated user details" time="0.013818667">
+        </testcase>
+        <testcase classname="src/__tests__/HomeHero.test.jsx" name="Home Hero Logged In &gt; should display welcome" time="0.004442834">
+        </testcase>
+        <testcase classname="src/__tests__/HomeHero.test.jsx" name="Home Hero Logged In &gt; should display title" time="0.01818625">
+        </testcase>
+        <testcase classname="src/__tests__/HomeHero.test.jsx" name="Home Hero Logged In &gt; should display text" time="0.00226025">
+        </testcase>
+        <testcase classname="src/__tests__/HomeHero.test.jsx" name="Home Hero Logged In &gt; should display shop button" time="0.01392675">
+        </testcase>
+        <testcase classname="src/__tests__/HomeHero.test.jsx" name="Home Hero Logged In &gt; should display meta" time="0.00214675">
+        </testcase>
+        <testcase classname="src/__tests__/HomeHero.test.jsx" name="Home Hero Logged In &gt; should display hero card" time="0.00175325">
+        </testcase>
+        <testcase classname="src/__tests__/HomeHero.test.jsx" name="Home Hero Logged In &gt; should display floating bar with user count" time="0.002033209">
+        </testcase>
+        <testcase classname="src/__tests__/HomeHero.test.jsx" name="Home Hero Logged In &gt; should display authenticated user details" time="0.014311125">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/SimilarProducts.test.jsx" timestamp="2026-02-23T21:16:06.154Z" hostname="Raress-MacBook-Pro.local" tests="10" failures="0" errors="0" skipped="0" time="0.208349792">
+        <testcase classname="src/__tests__/SimilarProducts.test.jsx" name="SimilarProducts &gt; when the cart is empty &gt; should NOT render the section at all" time="0.012195167">
+        </testcase>
+        <testcase classname="src/__tests__/SimilarProducts.test.jsx" name="SimilarProducts &gt; when the cart is empty &gt; should NOT render the section when cart is null" time="0.001222667">
+        </testcase>
+        <testcase classname="src/__tests__/SimilarProducts.test.jsx" name="SimilarProducts &gt; when the cart has items &gt; should render the &apos;You may also like&apos; heading" time="0.007300125">
+        </testcase>
+        <testcase classname="src/__tests__/SimilarProducts.test.jsx" name="SimilarProducts &gt; when the cart has items &gt; should render all product titles" time="0.0021095">
+        </testcase>
+        <testcase classname="src/__tests__/SimilarProducts.test.jsx" name="SimilarProducts &gt; when the cart has items &gt; should render prices with the euro symbol" time="0.003256916">
+        </testcase>
+        <testcase classname="src/__tests__/SimilarProducts.test.jsx" name="SimilarProducts &gt; when the cart has items &gt; should render an &apos;Add to cart&apos; button for each product" time="0.091200208">
+        </testcase>
+        <testcase classname="src/__tests__/SimilarProducts.test.jsx" name="SimilarProducts &gt; when the cart has items &gt; should render product images with correct alt text" time="0.001779583">
+        </testcase>
+        <testcase classname="src/__tests__/SimilarProducts.test.jsx" name="SimilarProducts &gt; when the cart has items &gt; should call onAddToCart with the correct product when clicking &apos;Add to cart&apos;" time="0.043281083">
+        </testcase>
+        <testcase classname="src/__tests__/SimilarProducts.test.jsx" name="SimilarProducts &gt; when the cart has items &gt; should call onAddToCart with the second product when clicking its button" time="0.023134375">
+        </testcase>
+        <testcase classname="src/__tests__/SimilarProducts.test.jsx" name="SimilarProducts &gt; when the cart has items &gt; should call onAddToCart exactly once per click" time="0.021475459">
+        </testcase>
+    </testsuite>
+</testsuites>
