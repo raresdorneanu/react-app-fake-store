@@ -5,7 +5,7 @@ on:
 
 jobs:
     deploy-dev:
-        name: Deploy To Dev
+        name: Deploy To Prod
         runs-on: ubuntu-latest
         environment: prod
         steps:
