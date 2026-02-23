@@ -1,0 +1,15 @@
+name: Deploy Prod
+
+on:
+    workflow_dispatch:
+
+jobs:
+    deploy-dev:
+        name: Deploy To Dev
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout Repo
+              uses: actions/checkout@v4
+
+            - name: Deploy to Vercel Preview
+              run: npx vercel --prod --token=${{ secrets.VERCEL_TOKEN }}
