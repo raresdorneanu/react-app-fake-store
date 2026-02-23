@@ -16,6 +16,7 @@ const UserPage = () => {
       setUpdated(prev => !prev);
       return res
     } catch (err) {
+      console.log(err.message)
       dispatch(setErrorMessage("There was an ERR"))
     }
   }

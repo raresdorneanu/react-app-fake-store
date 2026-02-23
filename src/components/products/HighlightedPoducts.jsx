@@ -14,7 +14,7 @@ const HighlightedPoducts = () => {
     useEffect(() => {
         dispatch(setProducts(allProducts))
         dispatch(setStartingArr(allProducts.slice(0, 3)))
-    }, [allProducts, searchTerm])
+    }, [allProducts, searchTerm, dispatch])
 
     const handleLoadMore = () => {
         dispatch(setLoadMore())

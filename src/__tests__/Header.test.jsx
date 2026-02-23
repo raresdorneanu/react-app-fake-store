@@ -2,7 +2,7 @@ import { MemoryRouter } from "react-router-dom";
 import { beforeEach, describe, expect, it } from "vitest";
 import Header from "../global-components/Header";
 import { render, screen } from "@testing-library/react";
-import { AuthContext, AuthProvider } from "../context/AuthProvider";
+import { AuthContext } from "../context/AuthProvider";
 
 const fakeAuthNotLoggedIn = {
     isLoggedIn: false,

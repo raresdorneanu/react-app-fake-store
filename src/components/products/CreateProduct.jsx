@@ -39,16 +39,15 @@ const CreateProduct = () => {
             return
         }
         try {
-            const data = await createProductApi(title, price, description, categoryId, images)
+            await createProductApi(title, price, description, categoryId, images)
         } catch (err) {
+            console.log(err.message)
         }
     }
 
     const handleReset = () => {
         dispatch({ type: 'reset' })
-        const body = {
-            title, price, description, categoryId, images
-        }
+
     }
     return (
         <section className="section create-product-section">
