@@ -10,7 +10,8 @@
         "preview": "vite preview",
         "test": "vitest run --reporter=verbose",
         "test:ci": "vitest run --reporter=junit --outputFile=test-results.xml",
-        "test:coverage": "vitest run --coverage"
+        "test:coverage": "vitest run --coverage",
+        "lint": "eslint src --ext .js,.jsx,.ts,.tsx"
     },
     "dependencies": {
         "@reduxjs/toolkit": "^2.11.2",
