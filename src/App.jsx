@@ -26,7 +26,7 @@ function App() {
         <ScrollToTop />
         <Header />
         <div>
-          {environment === 'development' && <p>Development</p>}
+          {environment === 'preview' && <p>Development</p>}
           {environment === 'production' && <p>Production</p>}
         </div>
         <ProductsProvider>
