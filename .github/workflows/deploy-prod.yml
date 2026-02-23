@@ -7,6 +7,7 @@ jobs:
     deploy-dev:
         name: Deploy To Dev
         runs-on: ubuntu-latest
+        environment: prod
         steps:
             - name: Checkout Repo
               uses: actions/checkout@v4
