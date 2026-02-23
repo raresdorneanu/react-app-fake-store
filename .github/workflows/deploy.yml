@@ -1,0 +1,16 @@
+name: Deploy
+
+on:
+    push:
+        branches: ["main"]
+
+jobs:
+    deploy-dev:
+        name: Deploy To Dev
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout Repo
+              uses: actions/checkout@v4
+
+            - name: Deploy to Vercel Preview
+              run: npx vercel --token=${{ secrets.VERCEL_TOKEN }}
