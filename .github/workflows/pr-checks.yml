@@ -47,7 +47,7 @@ jobs:
             - name: Run test command
               run: |
                   npm run test:ci
-                  test:coverage
+                  npm run test:coverage
 
     scan:
         name: Scan CodeQL
