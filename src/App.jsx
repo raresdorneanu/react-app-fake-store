@@ -19,11 +19,16 @@ import ScrollToTop from './global-components/ScrollToTop'
 import ProtectedRoute from './components/ProtectedRoute'
 import ProtectedRouteLogged from './components/ProtectedRouteLogged'
 function App() {
+  const environment = import.meta.env.MODE
   return (
     <Provider store={store} >
       <AuthProvider>
         <ScrollToTop />
         <Header />
+        <div>
+          {environment === 'preview' && <p>Development</p>}
+          {environment === 'production' && <p>Production</p>}
+        </div>
         <ProductsProvider>
           <Routes>
             <Route path="/" element={<Home />} />
