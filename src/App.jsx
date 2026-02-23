@@ -19,7 +19,7 @@ import ScrollToTop from './global-components/ScrollToTop'
 import ProtectedRoute from './components/ProtectedRoute'
 import ProtectedRouteLogged from './components/ProtectedRouteLogged'
 function App() {
-  const environment = import.meta.env.MODE
+  const environment = import.meta.env.VITE_APP_ENV
   return (
     <Provider store={store} >
       <AuthProvider>
