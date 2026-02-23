@@ -2,8 +2,7 @@ name: CI
 
 on:
     pull_request:
-        branches:
-            - main
+        branches: ["main"]
 
 jobs:
     lint:
@@ -13,8 +12,58 @@ jobs:
         steps:
             - name: Checkout repo
               uses: actions/checkout@v6
+
             - name: Install Dependencies
               run: npm install
 
             - name: Run lint command
               run: npm run lint
+
+    build:
+        name: Build
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout repo
+              uses: actions/checkout@v6
+
+            - name: Install Dependencies
+              run: npm install
+
+            - name: Run build command
+              run: npm run build
+
+    test:
+        name: Testing
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout repo
+              uses: actions/checkout@v6
+
+            - name: Install Dependencies
+              run: npm install
+
+            - name: Run test command
+              run: |
+                  npm run test:ci
+                  test:coverage
+
+    scan:
+        name: Scan CodeQL
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+
+            - name: Initialize CodeQL
+              uses: github/codeql-action/init@v4
+              with:
+                  languages: javascript-typescript
+                  build-mode: none
+
+            - name: Perform CodeQL Analysis
+              uses: github/codeql-action/analyze@v4
+              with:
+                  category: "/language:javascript-typescript"
