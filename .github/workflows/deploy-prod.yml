@@ -13,7 +13,7 @@ jobs:
               uses: actions/checkout@v4
 
             - name: Deploy to Vercel Preview
-              run: npx vercel --prod --token=${{ secrets.VERCEL_TOKEN }}
+              run: npx vercel --prod --build-env VITE_APP_ENV=production --token=${{ secrets.VERCEL_TOKEN }}
               env:
                   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
                   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
